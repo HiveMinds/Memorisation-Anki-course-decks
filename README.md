@@ -5,7 +5,8 @@ Anki decks for academic courses to help you memorize and study.
 ## How to use?
 1. Dowload or clone this repository.
 2. Download and open Anki, it's open source.
-3. Import a "deck=set of flashcards" (e.g. the one in: `SOW-BKI212A-AI: Principles and Techniques 20-21/Multi-agent/Game_theory.apkg`), (flashcard = a memory card, with a question and answer).
+3. Include the `LaTeX Note Importer for Anki` addon in Anki, using `Tools > Add-ons > Browse & Install>type: 1199027445 to find the addon> restart Anki)`
+3. Import the deck of flashcards using: `File>import>Exoplanets.tex`. then select (or create) the name of the deck for that course for that `.tex` file, e.g. `AE4890-11 Planetary Sciences I_Exoplanets.apkg`, and press `OK`.
 4. Start "practicing your memory".
 5. If you feel like it, you can `fork=copy`this `repository=folder`, add new flashcards and/or decks and click on `pull request=include my work pls`.
 
