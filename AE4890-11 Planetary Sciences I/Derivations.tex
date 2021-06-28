@@ -1,0 +1,40 @@
+% -*- coding:utf-8 -*-
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\newenvironment{note}{\paragraph{NOTE:}}{}
+\newenvironment{field}{\paragraph{field:}}{}
+\begin{document}
+\section{Meteorites-Radiation}
+\begin{note}
+   \begin{field}
+        Given \(N_p(t)=e^{-\frac{t-t_0}{\tau_m}}N_p(t_0)\), derive \(N_d(t)\).
+   \end{field}
+   \begin{field}
+   		\[
+   			N_p(t)=e^{-\frac{t-t_0}{\tau_m}}N_p(t_0)
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+(N_p(t_0)-N_p(t))
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+(N_p(t_0)-e^{-\frac{t-t_0}{\tau_m}}N_p(t_0))
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+N_p(t_0)(1-e^{-\frac{t-t_0}{\tau_m}})
+   		\]
+   		Substitute: \(N_p(t_0)=N_p(t)e^{\frac{t-t_0}{\tau_m}}\):
+   		\[
+   			N_d(t)=N_d(t_0)+N_p(t)e^{\frac{t-t_0}{\tau_m}}(1-e^{-\frac{t-t_0}{\tau_m}})
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+N_p(t)e^{\frac{t-t_0}{\tau_m}}-N_p(t)e^{\frac{t-t_0}{\tau_m}}e^{-\frac{t-t_0}{\tau_m}}
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+N_p(t)e^{\frac{t-t_0}{\tau_m}}-N_p(t)
+   		\]
+   		\[
+   			N_d(t)=N_d(t_0)+N_p(t)(e^{\frac{t-t_0}{\tau_m}}-1)
+   		\]
+   \end{field}
+\end{note}
+\end{document}
